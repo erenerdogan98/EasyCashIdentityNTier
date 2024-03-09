@@ -11,5 +11,9 @@ namespace EasyCashEntityLayer.Concrete
         public string Currency { get; set; } // maybe later , can do table for Currency
         public decimal AccountBalance { get; set; }
         public string BankBranch { get; set; }
+
+        // relationship between AppUser
+        public int AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
     }
 }

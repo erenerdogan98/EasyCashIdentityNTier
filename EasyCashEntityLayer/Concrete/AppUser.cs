@@ -13,5 +13,7 @@ namespace EasyCashEntityLayer.Concrete
         public string District { get; set; }
         public string ImageUrl { get; set; }
 
+        // for relationship between 'CustomerAccount'
+        public ICollection<CustomerAccount> CustomerAccounts { get; set; }
     }
 }
