@@ -162,7 +162,7 @@ namespace EasyCashDatabaseLogicLayer.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("CustomerAccounts");
+                    b.ToTable("CustomerAccounts", (string)null);
                 });
 
             modelBuilder.Entity("EasyCashEntityLayer.Concrete.CustomerAcountProcess", b =>
@@ -184,7 +184,7 @@ namespace EasyCashDatabaseLogicLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CustomerAcountProcesses");
+                    b.ToTable("CustomerAcountProcesses", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

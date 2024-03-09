@@ -17,6 +17,6 @@ namespace EasyCashDatabaseLogicLayer.Concrete
         }
 
         public DbSet<CustomerAccount> CustomerAccounts { get; set; }
-        public DbSet<CustomerAcountProcess> CustomerAcountProcesses { get; set; }
+        public DbSet<CustomerAccountProcess> CustomerAcountProcesses { get; set; }
     }
 }
