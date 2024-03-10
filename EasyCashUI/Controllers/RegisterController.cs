@@ -1,8 +1,10 @@
 ﻿using EasyCashBusinessLogicLayer.ValidationRules.AppUserValidationRules;
 using EasyCashDTOLayer.Dtos.AppUserDtos;
 using EasyCashEntityLayer.Concrete;
+using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
 
 namespace EasyCashUI.Controllers
 {
@@ -41,8 +43,32 @@ namespace EasyCashUI.Controllers
 				var result = await _userManager.CreateAsync(user, appUserRegister.Password);
 				if (result.Succeeded)
 				{
-					return Ok("Resigration successfully");
-				}
+					// I'll explain with hotmail too , and also after refactoring , will add model class for email processings..
+                    MimeMessage mimeMessage = new();
+                    MailboxAddress mailboxAddressFrom = new("Easy Cash", "ornekdeneme_123@hotmail.com");
+                    MailboxAddress mailboxAddressTo = new("User", user.Email);
+
+                    mimeMessage.From.Add(mailboxAddressFrom);
+                    mimeMessage.To.Add(mailboxAddressTo);
+
+                    var bodyBuilder = new BodyBuilder
+                    {
+                        TextBody = $"Your confirmation code to complete the registration process: {code}"
+                    };
+                    mimeMessage.Body = bodyBuilder.ToMessageBody();
+
+                    mimeMessage.Subject = "Easy Cash Confirm Code";
+
+                    SmtpClient client = new();
+                    client.Connect("smtp.gmail.com", 587, false);
+                    client.Authenticate("fenerli458@gmail.com", "fffvozozqrxtybzb");
+                    client.Send(mimeMessage);
+                    client.Disconnect(true);
+
+                    TempData["Mail"] = appUserRegister.Email;
+
+                    return RedirectToAction("Index", "ConfirmMail");
+                }
 				else
 				{
 					foreach (var error in validationResult.Errors)
