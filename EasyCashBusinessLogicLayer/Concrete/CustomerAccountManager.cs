@@ -1,5 +1,5 @@
 ﻿using EasyCashBusinessLogicLayer.Abstract;
-using EasyCashDatabaseLogicLayer.Abstract;
+using EasyCashDataAccessLayer.Abstract;
 using EasyCashEntityLayer.Concrete;
 using System.Linq.Expressions;
 

@@ -1,9 +1,9 @@
 ﻿using EasyCashBusinessLogicLayer.Abstract;
 using EasyCashBusinessLogicLayer.Concrete;
 using EasyCashBusinessLogicLayer.ValidationRules.AppUserValidationRules;
-using EasyCashDatabaseLogicLayer.Abstract;
-using EasyCashDatabaseLogicLayer.Concrete;
-using EasyCashDatabaseLogicLayer.EntityFramework;
+using EasyCashDataAccessLayer.Abstract;
+using EasyCashDataAccessLayer.Concrete;
+using EasyCashDataAccessLayer.EntityFramework;
 using EasyCashDTOLayer.Dtos.AppUserDtos;
 using EasyCashEntityLayer.Concrete;
 using FluentValidation;

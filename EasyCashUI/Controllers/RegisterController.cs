@@ -21,7 +21,7 @@ namespace EasyCashUI.Controllers
 		public async Task<IActionResult> Index(AppUserRegisterDto appUserRegister)
 		{
 			var validationResult = _validationRules.Validate(appUserRegister);
-            Random random = new Random();
+            Random random = new();
             int code;
             code = random.Next(100000, 1000000);
             if (validationResult.IsValid)

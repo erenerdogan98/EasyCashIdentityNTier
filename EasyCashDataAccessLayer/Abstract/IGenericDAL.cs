@@ -1,9 +1,7 @@
 ﻿using EasyCashEntityLayer.Abstract;
-
 using System.Linq.Expressions;
 
-
-namespace EasyCashDatabaseLogicLayer.Abstract
+namespace EasyCashDataAccessLayer.Abstract
 {
     public interface IGenericDAL<T> where T : class, IEntityBase, new()
     {
@@ -15,11 +13,3 @@ namespace EasyCashDatabaseLogicLayer.Abstract
         Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> filter);
     }
 }
-/* 
- where T : class, IEntityBase, new() expression satisfies the following conditions:
-
-T must be a reference type (class).
-T must implement the IEntityBase interface.
-Type T must have a parameterless constructor (new()).
- */
-

@@ -1,9 +1,9 @@
-﻿using EasyCashDatabaseLogicLayer.Abstract;
-using EasyCashDatabaseLogicLayer.Concrete;
-using EasyCashDatabaseLogicLayer.Repositories;
+﻿using EasyCashDataAccessLayer.Abstract;
+using EasyCashDataAccessLayer.Concrete;
+using EasyCashDataAccessLayer.Repositories;
 using EasyCashEntityLayer.Concrete;
 
-namespace EasyCashDatabaseLogicLayer.EntityFramework
+namespace EasyCashDataAccessLayer.EntityFramework
 {
     public class EFCustomerAccountRepository(Context context) : GenericRepository<CustomerAccount>(context), ICustomerAccountDAL
     {

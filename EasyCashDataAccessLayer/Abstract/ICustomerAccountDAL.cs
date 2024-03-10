@@ -1,6 +1,6 @@
 ﻿using EasyCashEntityLayer.Concrete;
 
-namespace EasyCashDatabaseLogicLayer.Abstract
+namespace EasyCashDataAccessLayer.Abstract
 {
     public interface ICustomerAccountDAL : IGenericDAL<CustomerAccount>
     {

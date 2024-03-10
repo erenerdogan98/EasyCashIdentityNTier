@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EasyCashDatabaseLogicLayer\EasyCashDataAccessLayer.csproj" />
+    <ProjectReference Include="..\EasyCashDataAccessLayer\EasyCashDataAccessLayer.csproj" />
     <ProjectReference Include="..\EasyCashDTOLayer\EasyCashDTOLayer.csproj" />
     <ProjectReference Include="..\EasyCashEntityLayer\EasyCashEntityLayer.csproj" />
   </ItemGroup>

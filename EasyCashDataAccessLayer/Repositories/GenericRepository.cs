@@ -1,13 +1,12 @@
-﻿using EasyCashDatabaseLogicLayer.Abstract;
-using EasyCashDatabaseLogicLayer.Concrete;
+﻿using EasyCashDataAccessLayer.Abstract;
+using EasyCashDataAccessLayer.Concrete;
 using EasyCashEntityLayer.Abstract;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore;
-
 using System.Linq.Expressions;
 
 
-namespace EasyCashDatabaseLogicLayer.Repositories
+namespace EasyCashDataAccessLayer.Repositories
 {
     public class GenericRepository<T>(Context context) : IGenericDAL<T> where T : class, IEntityBase, new()
     {
