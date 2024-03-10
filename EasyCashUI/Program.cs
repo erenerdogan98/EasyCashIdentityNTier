@@ -1,7 +1,12 @@
+using EasyCashUI.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// For dependency injections which I have class to control ..
+builder.Services.ConfigureMyServices();
 
 var app = builder.Build();
 
@@ -17,6 +22,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// for identity 
+app.UseAuthentication();
 
 app.UseAuthorization();
 

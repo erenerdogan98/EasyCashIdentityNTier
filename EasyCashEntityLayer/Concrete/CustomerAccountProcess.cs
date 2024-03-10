@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EasyCashEntityLayer.Concrete
 {
-    public class CustomerAcountProcess : IEntityBase
+    public class CustomerAccountProcess : IEntityBase
     {
         // this table will for Account transactions 
         [Key]

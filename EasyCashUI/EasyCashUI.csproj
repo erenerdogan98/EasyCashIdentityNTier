@@ -188,6 +188,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
@@ -204,7 +206,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EasyCashBusinessLogicLayer\EasyCashBusinessLogicLayer.csproj" />
-    <ProjectReference Include="..\EasyCashDatabaseLogicLayer\EasyCashDatabaseLogicLayer.csproj" />
+    <ProjectReference Include="..\EasyCashDatabaseLogicLayer\EasyCashDataAccessLayer.csproj" />
     <ProjectReference Include="..\EasyCashDTOLayer\EasyCashDTOLayer.csproj" />
     <ProjectReference Include="..\EasyCashEntityLayer\EasyCashEntityLayer.csproj" />
   </ItemGroup>

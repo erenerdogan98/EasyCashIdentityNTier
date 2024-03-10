@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashBusinessLogicLayer", "EasyCashBusinessLogicLayer\EasyCashBusinessLogicLayer.csproj", "{EC36ED8E-4B23-4BA0-B7A4-369C448467D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashBusinessLogicLayer", "EasyCashBusinessLogicLayer\EasyCashBusinessLogicLayer.csproj", "{EC36ED8E-4B23-4BA0-B7A4-369C448467D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashDatabaseLogicLayer", "EasyCashDatabaseLogicLayer\EasyCashDatabaseLogicLayer.csproj", "{84525CD4-A49A-49A0-91B9-9C2180B680C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashDataAccessLayer", "EasyCashDatabaseLogicLayer\EasyCashDataAccessLayer.csproj", "{84525CD4-A49A-49A0-91B9-9C2180B680C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashEntityLayer", "EasyCashEntityLayer\EasyCashEntityLayer.csproj", "{4382E8C5-D02D-480A-B6A3-E8B3362F38CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashEntityLayer", "EasyCashEntityLayer\EasyCashEntityLayer.csproj", "{4382E8C5-D02D-480A-B6A3-E8B3362F38CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashDTOLayer", "EasyCashDTOLayer\EasyCashDTOLayer.csproj", "{F846F8B7-1205-44BD-AF60-1F5645466D94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashDTOLayer", "EasyCashDTOLayer\EasyCashDTOLayer.csproj", "{F846F8B7-1205-44BD-AF60-1F5645466D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashUI", "EasyCashUI\EasyCashUI.csproj", "{193E3455-3A58-48ED-88E5-1868278365B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyCashUI", "EasyCashUI\EasyCashUI.csproj", "{193E3455-3A58-48ED-88E5-1868278365B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
